@@ -6,3 +6,4 @@ import { YooMoneyClient } from './yoomoney-client.service';
   exports: [YooMoneyClient],
 })
 export class YooMoneyClientModule {}
+ 

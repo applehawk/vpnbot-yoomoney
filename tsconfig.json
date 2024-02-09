@@ -18,12 +18,6 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@app/update-client": [
-        "libs/update-client/src"
-      ],
-      "@app/update-client/*": [
-        "libs/update-client/src/*"
-      ],
       "@app/yoomoney-client": [
         "libs/yoomoney-client/src"
       ],

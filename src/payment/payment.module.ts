@@ -7,12 +7,14 @@ import { PaymentStrategyFactory } from './strategies/factory/payment-strategy.fa
 import { UserModule } from 'src/user/user.module';
 import { YooMoneyClientModule } from '@app/yoomoney-client';
 import { PaymentController } from './payment.controller';
+import { AppModule } from 'src/app.module';
 
 @Module({
   imports: [
     MongooseModule.forFeature([{ name: Payment.name, schema: PaymentSchema }]),
     UserModule,
     YooMoneyClientModule,
+    forwardRef(() => AppModule)
   ],
   providers: [PaymentService, PaymentStrategyFactory],
   controllers: [PaymentController],

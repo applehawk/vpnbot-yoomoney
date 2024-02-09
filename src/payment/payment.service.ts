@@ -69,7 +69,6 @@ export class PaymentService {
     if (!payment) throw new Error(`Payment with id ${paymentId} not found`);
 
     const paymentStrategy = this.paymentStrategyFactory.createPaymentStrategy(payment.paymentSystem);
-
     const paymentStatus = await paymentStrategy.validateTransaction(payment.paymentId);
     const isPaid = paymentStatus === PaymentStatusEnum.PAID;
 

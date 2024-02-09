@@ -2,7 +2,19 @@
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
+  "projects": {
+    "yoomoney-client": {
+      "type": "library",
+      "root": "libs/yoomoney-client",
+      "entryFile": "index",
+      "sourceRoot": "libs/yoomoney-client/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/yoomoney-client/tsconfig.lib.json"
+      }
+    }
+  },
   "compilerOptions": {
+    "webpack": true,
     "deleteOutDir": true
   }
 }
