@@ -1,5 +1,8 @@
+---
 meta:
   environment: db
   toolchain:
     name: mongodb
     version: 6.0
+build: {}
+run: {}
