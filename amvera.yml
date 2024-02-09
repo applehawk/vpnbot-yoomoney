@@ -1,15 +1,6 @@
 ---
 meta:
-  environment: node
+  environment: db
   toolchain:
-    name: npm
-    version: 18
-build:
-  skip: false
-  artifacts:
-    '*': /
-run:
-  scriptName: index.js
-  command: npm run start
-  persistenceMount: /data
-  containerPort: 80
+    name: mongodb
+    version: 6.0
